@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+
+}
+
+header {
+    background-color: rgb(90, 90, 90);
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    max-height: 50px;
+}
+
+h1 {
+    font-size: 25px;
+    flex-grow: 8;
+    text-align: start;
+    margin: 10px auto auto 25px;
+    color: rgb(215, 215, 215);
+}
+
+.faq,
+.create {
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 90, 90);
+    border-radius: 5px;
+    margin: 5px 5px;
+    height: 35px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 250px);
+}
+
+.main-info {
+    flex-grow: 5;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.inscription {
+    font-size: 30px;
+    color: rgb(185, 185, 185);
+}
+
+.signature {
+    font-size: 20px;
+    color: rgb(185, 185, 185);
+}
+
+.main-example {
+    flex-grow: 5;
+}
+
+#my-signin2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(90, 90, 90);
+    height: 45px;
+    margin: 5px 5px;
+    font-size: 25px;
+}
+
+.create_two {
+    text-align: center;
+    color: rgb(215, 215, 215);
+    border-radius: 5px;
+    background-color: rgb(90, 90, 90);
+    height: 40px;
+    margin: 8px 5px;
+    font-size: 25px;
+}
+
+
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.b1 {
+    color: rgb(185, 185, 185);
+    font-size: 40px;
+    margin: auto auto 20px 20px; 
+}
+
+.examples {
+    flex-grow: 9;
+    background-color: rgb(90, 90, 90);
+    border: 3px solid rgb(175, 175, 175);
+    border-radius: 5px;
+}
+
+.links {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.1;
+
+}
+.cqxg,
+.marry {
+    margin: 5px 5px;
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+.cqxg::before {
+    content: url('./img/gh.png');
+}
+
+.marry::before {
+    content: url('./img/gh.png');
+}
+

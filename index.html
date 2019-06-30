@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id"
+        content="985236032688-698v71852uhv9bm5t81p4oitbctp42up.apps.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Free online animation editor</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <h1>Online animation editor</h1>
+            <button href="#" class="create">Create animation</button>
+            <button href="#" class="faq">FAQ</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-info">
+            <p class="inscription">
+                This is a free online editor for animated sprites & art
+            </p>
+            <p class="signature">
+                Create animations in your browser
+            </p>
+            <div class="button-wrapper">
+                <button href="#" class="create_two">Create animation</button>
+                <button id="my-signin2" data-longtitle="true">
+                </button>
+            </div>
+        </section>
+        <section class="main-example">
+        </section>
+    </main>
+
+    <footer>
+        <span class="b1">Example sprites</span>
+        <div class="footer-wrapper">
+            <section class="examples"></section>
+            <section class="links">
+                <a href="#" class="cqxg">
+                    GitHub Contribute to the development of CQXG Media
+                </a>
+                <a href="#" class="marry">
+                    GitHub Contribute to the development of Marry Media
+                </a>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+            console.log(error);
+        }
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 150,
+                'height': 35,
+            });
+        }
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+
+
+</body>
+
+</html>
