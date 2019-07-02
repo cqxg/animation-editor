@@ -121,6 +121,7 @@ main {
 .marry {
     margin: 5px 5px;
     text-decoration: none;
+    text-align: start;
     color: rgb(185, 185, 185);
 }
 
