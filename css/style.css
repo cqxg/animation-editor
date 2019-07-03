@@ -66,7 +66,7 @@ main {
     background-size: 100%;
     margin: 60px 50px 0px 0px;
     background-repeat: no-repeat;
-    background-image: url('./img/screen.png');
+    background-image: url('./img/screenshot.png');
 }
 
 #my-signin2 {
@@ -105,7 +105,7 @@ main {
 
 .examples {
     flex-grow: 9;
-    background-color: rgb(90, 90, 90);
+    background-size: 100%;
     border: 3px solid rgb(175, 175, 175);
     border-radius: 5px;
 }
