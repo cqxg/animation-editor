@@ -5,13 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-signin-client_id"
-        content="985236032688-698v71852uhv9bm5t81p4oitbctp42up.apps.googleusercontent.com">
-    <meta name="google-signin-client_id"
-        content="985236032688-5m6q8sumpfp6aom6m9mup5dd2dh317as.apps.googleusercontent.com">
-    <meta name="google-site-verification" content="XKnw6Pm49ZWUvn8hml5NbXeeeisv7sld2iTa4_VXf3I" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Free online animation editor</title>
 </head>
@@ -19,66 +12,40 @@
 <body>
 
     <header>
-        <div class="header-wrapper">
-            <h1>Online animation editor</h1>
-            <form action="https://cqxg.github.io/animation-app/dist" target="_blank">
-                <button class="create">Create animation</button>
-            </form>
-            <form action="https://cqxg.github.io/animation-FAQ/" target="_blank">
-                <button class="faq">FAQ</button>
-            </form>
-        </div>
+        <h1>Online animation editor</h1>
     </header>
 
     <main>
-        <section class="main-info">
-            <p class="inscription">
-                This is a free online editor for animated sprites & art
-            </p>
-            <p class="signature">
-                Create animations in your browser
-            </p>
-            <div class="button-wrapper">
-                <form action="https://cqxg.github.io/animation-app/dist" target="_blank">
-                    <button class="create_two">Create animation</button>
-                </form>
-                <button id="my-signin2" data-longtitle="true">
-                </button>
+        <div class="content">
+            <div class="sub">
+                <span>This is a free online editor for animated sprites & art</span>
             </div>
-        </section>
-        <section class="main-example">
-        </section>
+            <span class="ex">
+                With this application, you can easily create a variety of animations
+                from the simplest to very complex and save them in .png format as well as
+                drawings as images.
+            </span>
+            <div class="screen">
+                <img class="screen_img" src="./css/img/screen.png" height="230px" alt="">
+            </div>
+            <div class="btn">
+                <a href="https://cqxg.github.io/animation-app/dist/">
+                    <img src="./css/img/Go2.png" height="100px" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="image">
+            <div class="desc">
+                <span class="desc_text">Create animations in your browser !</span>
+            </div>
+            <div class="img">
+            </div>
+        </div>
     </main>
 
     <footer>
-
-        <section class="links">
-            <a href="https://github.com/cqxg" class="cqxg">
-                GitHub Contribute to the development of CQXG Media
-            </a>
-        </section>
-
+        <a href="https://github.com/cqxg" class="cqxg">CQXG Media</a>
     </footer>
-
-    <script>
-        function onSuccess(googleUser) {
-            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        }
-        function onFailure(error) {
-            console.log(error);
-        }
-        function renderButton() {
-            gapi.signin2.render('my-signin2', {
-                'scope': 'profile email',
-                'width': 150,
-                'height': 35,
-            });
-        }
-    </script>
-
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-    <script src="https://apis.google.com/js/api:client.js"></script>
-
 
 </body>
 
